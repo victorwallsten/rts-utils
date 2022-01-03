@@ -37,7 +37,7 @@ library:
   - split
 
 executables:
-  gen-rts-makefile-exe:
+  gen-rts-makefile:
     main:                Main.hs
     source-dirs:         app
     dependencies:

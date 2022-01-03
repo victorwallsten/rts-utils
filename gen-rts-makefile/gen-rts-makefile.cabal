@@ -37,7 +37,7 @@ library
     , split
   default-language: Haskell2010
 
-executable gen-rts-makefile-exe
+executable gen-rts-makefile
   main-is: Main.hs
   other-modules:
       Paths_gen_rts_makefile
