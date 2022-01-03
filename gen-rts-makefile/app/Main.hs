@@ -20,8 +20,7 @@ userDefinedCFilesOf = filter userDefined . filter (isSuffixOf ".c")
           [ "startup.c",
             "TinyTimber.c",
             "canTinyTimber.c",
-            "sciTinyTimber.c",
-            "sioTinyTimber.c"
+            "sciTinyTimber.c"
           ]
 
 listCurrentDir :: IO [FilePath]
