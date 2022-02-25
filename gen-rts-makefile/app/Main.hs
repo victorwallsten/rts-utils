@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Data.List (isSuffixOf)
+import Data.List (isSuffixOf, sort)
 import Data.Maybe (listToMaybe)
 import Makefile (ccRecipe, makeFile, targetCS)
 import Parser (localHeaders)
@@ -29,7 +29,7 @@ listCurrentDir = getCurrentDirectory >>= listDirectory
 main :: IO ()
 main = do
   arg1 <- listToMaybe <$> getArgs
-  fs <- userDefinedCFilesOf <$> listCurrentDir
+  fs <- sort . userDefinedCFilesOf <$> listCurrentDir
   ss <- mapM readFile fs
   let fhs = [(f, localHeaders s) | (f, s) <- zip fs ss]
       udrs = concatMap userDefinedRule fhs
