@@ -33,6 +33,6 @@ main = do
   ss <- mapM readFile fs
   let fhs = [(f, localHeaders s) | (f, s) <- zip fs ss]
       udrs = concatMap userDefinedRule fhs
-      os = unwords $ map (("$(DEBUGDIR)" <>) . (<> ".o") . init . init) fs
+      os = init $ init $ unlines $ map (("         $(DEBUGDIR)" <>) . (<> ".o \\") . init . init) fs
       mf = makeFile arg1 udrs os
   writeFile "Makefile" mf

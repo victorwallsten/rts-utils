@@ -66,7 +66,22 @@ directories =
 
 objects :: String -> String
 objects s =
-  "OBJECTS= $(DEBUGDIR)dispatch.o $(DEBUGDIR)TinyTimber.o $(DEBUGDIR)canTinyTimber.o $(DEBUGDIR)sciTinyTimber.o $(DEBUGDIR)stm32f4xx_can.o $(DEBUGDIR)stm32f4xx_dac.o $(DEBUGDIR)stm32f4xx_exti.o $(DEBUGDIR)stm32f4xx_gpio.o $(DEBUGDIR)stm32f4xx_rcc.o $(DEBUGDIR)stm32f4xx_syscfg.o $(DEBUGDIR)stm32f4xx_tim.o $(DEBUGDIR)stm32f4xx_usart.o $(DEBUGDIR)startup.o " <> s
+  unlines
+    [ "OBJECTS= $(DEBUGDIR)dispatch.o \\",
+      "         $(DEBUGDIR)TinyTimber.o \\",
+      "         $(DEBUGDIR)canTinyTimber.o \\",
+      "         $(DEBUGDIR)sciTinyTimber.o \\",
+      "         $(DEBUGDIR)stm32f4xx_can.o \\",
+      "         $(DEBUGDIR)stm32f4xx_dac.o \\",
+      "         $(DEBUGDIR)stm32f4xx_exti.o \\",
+      "         $(DEBUGDIR)stm32f4xx_gpio.o \\",
+      "         $(DEBUGDIR)stm32f4xx_rcc.o \\",
+      "         $(DEBUGDIR)stm32f4xx_syscfg.o \\",
+      "         $(DEBUGDIR)stm32f4xx_tim.o \\",
+      "         $(DEBUGDIR)stm32f4xx_usart.o \\",
+      "         $(DEBUGDIR)startup.o \\",
+      s
+    ]
 
 target :: String -> String
 target = ("$(DEBUGDIR)" <>) . (<> ".o: ")
