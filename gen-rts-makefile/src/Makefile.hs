@@ -30,9 +30,29 @@ compilers path =
 flags :: String
 flags =
   unlines
-    [ "CCFLAGS=     -g -O0 -Wall -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fverbose-asm -DSTM32F40_41xxx -I ./device/inc -I ./driver/inc",
+    [ "CCFLAGS=     -g \\",
+      "             -O0 \\",
+      "             -Wall \\",
+      "             -mthumb \\",
+      "             -mcpu=cortex-m4 \\",
+      "             -mfloat-abi=hard \\",
+      "             -mfpu=fpv4-sp-d16 \\",
+      "             -fverbose-asm \\",
+      "             -DSTM32F40_41xxx \\",
+      "             -I ./device/inc \\",
+      "             -I ./driver/inc",
+      "",
       "ASFLAGS=     -IIFLAGS",
-      "LINKERFLAGS= --specs=nano.specs -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -nostartfiles -T ./md407-ram.x -Wl,-Map=./Debug/RTS-Lab.map,--cref",
+      "",
+      "LINKERFLAGS= --specs=nano.specs \\",
+      "             -mthumb \\",
+      "             -mfloat-abi=hard \\",
+      "             -mfpu=fpv4-sp-d16 \\",
+      "             -mcpu=cortex-m4 \\",
+      "             -nostartfiles \\",
+      "             -T ./md407-ram.x \\",
+      "             -Wl,-Map=./Debug/RTS-Lab.map,--cref",
+      "",
       "POSTFLAGS=   -S -O srec"
     ]
 
