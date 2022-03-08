@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+send() {
+  stty 115200 -parenb cs8 -cstopb &&
+  echo 'load' > /dev/ttyUSB$1 &&
+  sleep 1 &&
+  cat Debug/RTS-Lab.s19 > /dev/ttyUSB$1 &&
+  sleep 1 &&
+  echo 'go' > /dev/ttyUSB$1
+}
+
+if [ $# -ge 1 ] ; then
+  for i in $@ ; do
+    send $i
+  done
+else
+  send 0
+fi
+

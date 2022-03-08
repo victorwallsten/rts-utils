@@ -1,6 +1,0 @@
-#!/bin/sh
-echo 'load' > /dev/ttyUSB0 &&
-sleep 1 &&
-cat Debug/RTS-Lab.s19 > /dev/ttyUSB0 &&
-sleep 1 &&
-echo 'go' > /dev/ttyUSB0

@@ -1,2 +1,0 @@
-#!/bin/sh
-stty 115200 -parenb cs8 -cstopb

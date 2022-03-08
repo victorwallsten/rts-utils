@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+show() {
+  stty -F /dev/ttyUSB$1 115200 raw -echo -parenb cs8 -cstopb &&
+  cat /dev/ttyUSB$1 &
+  cat > /dev/ttyUSB$1
+}
+
+if [ $# -ge 1 ] ; then
+  show $1
+else
+  show 0
+fi
+
