@@ -9,4 +9,3 @@ Chalmers University of Technology.
 
 ## TODO
 * Instructions for building and using the makefile generator.
-* Instructions for using the scripts.
