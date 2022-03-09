@@ -7,8 +7,8 @@ A makefile for the default project.
 
 ## Usage
 To build the project, put the makefile in the root folder of the project (where
-`application.c` and `TinyTimber.c` are located) and call `make` from there. It
-is assumed that the compiler directory is on the `PATH` environment variable; if
+`application.c` and `TinyTimber.c` are located) and run `make` from there. It is
+assumed that the compiler directory is on the `PATH` environment variable; if
 not, edit the `C` definition at [line 6](Makefile#L6), specifying the full path
 to the directory along with the partial `arm-none-eabi` executable name (e.g.
 `$HOME/Downloads/gcc-arm-none-eabi-VERSION_NAME/arm-none-eabi`.
