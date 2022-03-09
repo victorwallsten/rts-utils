@@ -8,6 +8,5 @@ Chalmers University of Technology.
 * [scripts](scripts): Scripts for communicating with the MD407 via the terminal.
 
 ## TODO
-* Instructions for modifying the makefile when adding files to the project.
 * Instructions for building and using the makefile generator.
 * Instructions for using the scripts.
