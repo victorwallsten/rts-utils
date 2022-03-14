@@ -3,10 +3,11 @@ Scripts for communicating with the MD407 via the terminal.
 
 ## Dependencies
 * A terminal emulator.
-* `stty`
-* `cat`
-* `echo`
-* `sleep`
+* GNU coreutils:
+    * `stty`
+    * `cat`
+    * `echo`
+    * `sleep`
 
 ## Usage
 To see the output from and transmit text to the MD407 (by means of mashing keys
