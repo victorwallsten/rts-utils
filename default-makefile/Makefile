@@ -54,8 +54,7 @@ OBJECTS= $(DEBUGDIR)dispatch.o \
          $(DEBUGDIR)stm32f4xx_tim.o \
          $(DEBUGDIR)stm32f4xx_usart.o \
          $(DEBUGDIR)startup.o \
-         $(DEBUGDIR)application.o 
-
+         $(DEBUGDIR)application.o
 
 ###
 ### Main target
