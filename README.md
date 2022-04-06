@@ -6,6 +6,3 @@ Chalmers University of Technology.
 * [default-makefile](default-makefile): A makefile for the default project.
 * [gen-rts-makefile](gen-rts-makefile): A makefile generator for the project.
 * [scripts](scripts): Scripts for communicating with the MD407 via the terminal.
-
-## TODO
-* Instructions for building and using the makefile generator.
