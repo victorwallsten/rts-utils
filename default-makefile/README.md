@@ -3,7 +3,11 @@ A makefile for the default project.
 
 ## Dependencies
 * `make`
-* `gcc-arm-none-eabi`
+* gcc-arm-none-eabi:
+    * `arm-none-eabi-gcc`
+    * `arm-none-eabi-as`
+    * `arm-none-eabi-g++`
+    * `arm-none-eabi-objcopy`
 * GNU coreutils:
     * `test`
     * `mkdir`
