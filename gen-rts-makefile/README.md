@@ -22,6 +22,7 @@ full path to the directory along with the partial `arm-none-eabi` executable
 name (e.g. run `gen-rts-makefile
 $HOME/Downloads/gcc-arm-none-eabi-VERSION_NAME/arm-none-eabi`).
 
+## Limitations
 The parser is very primitive - essentially, it just looks for the word
 `#include` followed by a word wrapped in quotation marks. It does not check
 whether the statement is commented out, nor does it check whether the included
