@@ -15,7 +15,7 @@ To build the project, put the makefile in the root folder of the project (where
 assumed that the compiler directory is on the `PATH` environment variable; if
 not, edit the definition at [line 6](Makefile#L6), specifying the full path to
 the directory along with the partial `arm-none-eabi` executable name (e.g.
-`$HOME/Downloads/gcc-arm-none-eabi-VERSION_NAME/arm-none-eabi`.
+`$HOME/Downloads/gcc-arm-none-eabi-VERSION_NAME/arm-none-eabi`).
 
 When adding source files to the project, object names and corresponding rules
 need to be added to the makefile. For example, if `foo.c` which depends on
