@@ -165,7 +165,6 @@ makeFile p r o =
       directories,
       comment "Objects",
       objects o,
-      "",
       comment' "Main target",
       "",
       ".PHONY: all",

@@ -43,6 +43,7 @@ executables:
     dependencies:
     - gen-rts-makefile
     - directory
+    - extra
 
     ghc-options:
     - -threaded
